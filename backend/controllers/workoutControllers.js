@@ -45,7 +45,7 @@ if(!mongoose.Types.ObjectId.isValid(id)){
     return res.status(404).json({error: 'No such workout'})   
 }
 
-    const workout = await Workout.findAndDeleteOne({_id: id})
+    const workout = await Workout.findOneAndDelet({_id: id})
 
     if(!workout) {
         return res.status(400).json({error: 'No such workout'})
