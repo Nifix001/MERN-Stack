@@ -34,6 +34,7 @@ const WorkoutForm = () => {
             console.log('new workout added', json);
         }
     }
+    
   return (
     <form className="create" onSubmit={handleSubmit}>
       <h3>Add a New Workout</h3>
